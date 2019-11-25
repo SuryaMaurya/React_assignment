@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
-import Complaint from './Complaint';
-import Report from './Report';
+import LeftPic from './LefPic';
+import NavBar from './NavBar';
+import DataTable from './Component/DataTable';
 
-class App extends React.Component{
-  
+import { Container } from '@material-ui/core';
+import './App.css';
+
+class App extends React.Component {
+
   render() {
-    return(
+
+    return (
       <>
-       <Complaint /><br/>
-       <Report /> 
+        <NavBar />
+        <LeftPic />
+        <DataTable />
       </>
     )
   }
